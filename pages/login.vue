@@ -1,7 +1,6 @@
 <template>
   <div>
-    Hello
-    <Tutorial/>
+    Login
   </div>
 </template>
 
@@ -13,15 +12,14 @@ import { Component, Prop } from "nuxt-property-decorator";
   components: { },
   head() {
     return {
-      title: 'Home',
+      title: 'Login',
     };
   },
-  name: 'main-page-view'
+  layout: 'anonymous',
+  name: 'login-page-view'
 })
 
 // export default Vue.extend({})
-export default class HomePage extends Vue {
-  @Prop({ default: true })
-  public showSearch: boolean = false;
+export default class LoginPageView extends Vue {
 }
 </script>
